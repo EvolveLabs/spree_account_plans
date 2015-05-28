@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :subscription, class: Spree::Subscription do
     association :variant, factory: :subscribable_variant
+    association :user, factory: :user_with_addresses
   end
 
   factory :subscribable_product, parent: :base_product do
@@ -14,5 +15,12 @@ FactoryGirl.define do
   factory :subscribable_variant, parent: :variant do
     association :product, factory: :subscribable_product
     interval_length 3
+  end
+
+  factory :order_with_subscription, parent: :order do
+    after(:create) do |order|
+      order.line_items << create(:subscribable_line_item)
+      order.line_items.reload
+    end
   end
 end
