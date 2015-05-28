@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_account_plans'
   s.version     = '3.0.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
-  s.required_ruby_version = '>= 2.0.0'
+  s.summary     = 'Enabling products to be subscribed to'
+  s.description = 'Allowing Spree::Products to be subscribed to on a per-user basis'
+  s.required_ruby_version = '>= 2.2.1'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = 'Joe Pintozzi'
+  s.email     = 'joseph@pintozzi.com'
+  s.homepage  = 'http://www.pintozzi.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 3.0.1'
+  s.add_dependency 'aasm', '~> 4.1.1'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'
