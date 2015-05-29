@@ -1,0 +1,7 @@
+<div class="checkbox">
+  <label>
+    <%= f.check_box :subscribable %>Subscription?<br/>
+  </label>
+</div>
+
+<%= render partial: 'spree/admin/variants/subscription_fields', locals: { f: f } %>

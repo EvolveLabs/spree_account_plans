@@ -1,5 +1,51 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  spree:
+    admin:
+      tab:
+        subscriptions: Subscriptions
+      user:
+        subscription_history: Subscription History
+
+    are_you_sure: Are you sure?
+    subscription: subscription
+    subscriptions: subscriptions
+
+    subscription_state:
+      active: active
+      canceled: canceled
+
+    creating_subscription: "Create subscription"
+    customer_details_updated: "The customer's details have been updated"
+    editing_issue: "Edit issue"
+    editing_subscription: "Edit subscription"
+    my_subscriptions: My subscriptions
+    new_subscription: New subscription
+    listing_subscriptions: Available Subscriptions
+    print: print
+    subscribe_call_to_action: Subscribe Now
+    subscribed: Subscribed
+    subscription_details: Subscription Details
+    subscription_ended: Subscription ended
+    subscription_ending: Subscription ending
+    subscription_successfully_created: "Subscription successfully created!"
+    subscription_successfully_updated: "Subscription successfully updated!"
+    you_have_no_subscriptions_yet: "You have no subscriptions yet"
+
+    activerecord:
+      attributes:
+        spree/address:
+          firstname: First Name
+          lastname: Last Name
+        spree/product:
+          interval_length: Interval Length (months)
+        spree/subscription:
+          created_at: Created at
+          id: Id
+          state: Status
+          subscribable: subscription
+        spree/variant:
+          interval_length: Interval Length (months)
+      models:
+        spree/subscription:
+          one: Subscription
+          other: Subscriptions

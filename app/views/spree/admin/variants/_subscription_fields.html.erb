@@ -1,0 +1,7 @@
+<% if f.object.subscribable? %>
+  <div class="form-group">
+    <%= f.label :interval_length %>
+    <br/>
+    <%= f.text_field :interval_length, class: "form-control" %>
+  </div>
+<% end %>

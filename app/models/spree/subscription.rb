@@ -1,9 +1,12 @@
 class Spree::Subscription < ActiveRecord::Base
   include ::AASM
 
+  belongs_to :credit_card
   belongs_to :variant
   delegate :product, to: :variant
   belongs_to :user
+
+  validates_associated :credit_card, :user
 
   aasm do
     state :created, initial: true
