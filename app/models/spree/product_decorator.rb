@@ -2,7 +2,7 @@ module Spree
   Product.class_eval do
     has_many :subscriptions
 
-    delegate :interval_length, to: :master
+    delegate_belongs_to :master, :interval_length
 
     scope :subscribable, -> { where(subscribable: true) }
     scope :unsubscribable, -> { where(subscribable: false) }

@@ -2,6 +2,11 @@ FactoryGirl.define do
   factory :subscription, class: Spree::Subscription do
     association :variant, factory: :subscribable_variant
     association :user, factory: :user_with_addresses
+    expires_at    { 1.day.from_now }
+  end
+
+  factory :expired_subscription, parent: :subscription do
+    expires_at    { 1.day.ago }
   end
 
   factory :subscribable_product, parent: :base_product do
