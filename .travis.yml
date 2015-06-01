@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.2.1
+bundler_args: "--without production"
+script:
+  - bundle exec rake test_app
+  - bundle exec rspec spec
+install:
+  - bundle install --without production

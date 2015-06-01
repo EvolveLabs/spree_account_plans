@@ -1,6 +1,8 @@
 SpreeAccountPlans
 =================
 
+[![Build Status](https://travis-ci.org/EvolveLabs/spree_account_plans.svg)](https://travis-ci.org/EvolveLabs/spree_account_plans)
+
 SpreeAccountPlans is a loose subscription model tied to `Spree::User` accounts.  Within the admin interface, you can make a product as subscribable or not.  If a product is `subscribable?`, you will be able to set an interval_length (in months) as to how frequently they should be charged.  The default is 1(month).
 
 *Note: this extension does NOT handle delivery or fulfillment of subscription, it just enables users to be charged on a monthly recurring basis.*
