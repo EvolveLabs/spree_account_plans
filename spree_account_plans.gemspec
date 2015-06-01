@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_account_plans'
-  s.version     = '3.0.1'
+  s.version     = '0.0.1'
   s.summary     = 'Enabling products to be subscribed to'
   s.description = 'Allowing Spree::Products to be subscribed to on a per-user basis'
   s.required_ruby_version = '>= 2.2.1'
@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.email     = 'joseph@pintozzi.com'
   s.homepage  = 'http://www.pintozzi.com'
 
-  #s.files       = `git ls-files`.split("\n")
-  #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
